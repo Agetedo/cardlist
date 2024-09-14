@@ -1,0 +1,52 @@
+.edisodeList {
+  margin-top: 50px;
+}
+.description {
+  padding: 15px;
+  background-color: var(--description-bg-color);
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  span {
+    max-width: 600px;
+    display: inline-flex;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 29px;
+    color: var(--ovive-color);
+  }
+}
+.image {
+  margin: 12px auto 0 auto;
+}
+.text {
+  margin: 20px auto 0 auto;
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 33px;
+  color: var(--light-gray-color);
+  text-wrap: pretty;
+}
+//---@media-edisodeList------------
+@media(max-width: 1024px) {
+  .title span {
+    font-size: calc(23px + (29 - 23)*((100vw - 320px)/(1024 - 320)));
+    line-height: calc(23px + (29 - 23)*((100vw - 320px)/(1024 - 320)));
+  }
+  .text {
+    font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1024 - 320)));
+    line-height: calc(26px + (33 - 26)*((100vw - 320px)/(1024 - 320)));
+  }
+}
+@media(max-width: 768px) {
+  .title {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

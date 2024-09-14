@@ -1,0 +1,104 @@
+.cardContent {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.cardContentItems {
+  margin: 0 auto 50px auto;
+  max-width: 1024px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--card-bg-color);
+}
+.character {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.image img {
+  border: 2px solid var(--green-bg-color);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.characterList {
+  .title {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--ovive-color);
+  }
+  .status {
+    margin-top: 20px;
+  }
+  .origin {
+    margin-top: 10px;
+  }
+  .status,
+  .origin {
+    line-height: 22px;
+    text-align: center;
+    color: var(--light-gray-color);
+  }
+}
+.alias {
+  line-height: 33px;
+  text-wrap: pretty;
+}
+.abilities {
+  line-height: 33px;
+  text-wrap: pretty;
+}
+.returnLink {
+  text-align: center;
+  a {
+    display: inline-block;
+    border: 2px dotted var(--ovive-color);
+    background-color: var(--green-bg-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all 1s ease;
+  }
+}
+//---@media-cards__list----------
+@media (hover: hover) and (pointer: fine) {
+  .returnLink a:hover {
+    background-color: var(--ovive-color);
+    color: var(--black-text-color);
+    border: 2px dotted var(--green-bg-color);
+  }
+}
+@media (hover: none) {
+  .returnLink a:active {
+    background-color: var(--ovive-color);
+    color: var(--black-text-color);
+    border: 2px dotted var(--green-bg-color);
+  }
+}
+@media(max-width: 1320px) {
+  .cardContent {
+    margin-top: calc(50px + (100 - 50)*((100vw - 320px)/(1320 - 320)));
+  }
+}
+@media(max-width: 1024px) {
+  .abilities,
+  .alias {
+    font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1024 - 320)));
+    line-height: calc(26px + (33 - 26)*((100vw - 320px)/(1024 - 320)));
+  }
+  .characterList .title {
+    font-size: calc(23px + (40 - 23)*((100vw - 320px)/(1024 - 320)));
+    line-height: calc(23px + (40 - 23)*((100vw - 320px)/(1024 - 320)));
+  }
+}
+@media(max-width: 768px) {
+  .character {
+    flex-direction: column;
+    align-items: center;
+  }
+}

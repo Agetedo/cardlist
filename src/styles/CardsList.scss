@@ -1,0 +1,93 @@
+.cards__list {
+  margin-top: 130px;
+  margin-bottom: 80px;
+}
+.buttons__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.button__filter {
+  display: inline-flex;
+  border: 2px dotted var(--ovive-color);
+  background-color: var(--green-bg-color);
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.filter__active {
+  display: inline-flex;
+  border: 2px dotted var(--green-bg-color);
+  background-color: var(--ovive-color);
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  color: var(--black-text-color);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  cursor: not-allowed;
+}
+.characters__cards {
+  margin-top: 50px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 30px; 
+  justify-content: center;
+}
+//---@media-cards__list----------
+@media (hover: hover) and (pointer: fine) {
+  .button__filter:hover {
+    background-color: var(--ovive-color);
+    border: 2px dotted var(--white-color);
+  }
+}
+@media (hover: none) {
+  .button__filter:active {
+    background-color: var(--ovive-color);
+    border: 2px dotted var(--white-color);
+  }
+}
+@media(max-width: 1178px) {
+  .buttons__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media(max-width: 1024px) {
+  .cards__list {
+    margin-top: calc(25px + (130 - 25)*((100vw - 320px)/(1024 - 320)));
+    margin-bottom: calc(50px + (80 - 50)*((100vw - 320px)/(1024 - 320)));
+  }
+  .characters__cards {
+    margin-top: calc(30px + (50 - 30)*((100vw - 320px)/(1024 - 320)));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: calc(15px + (30 - 15)*((100vw - 320px)/(1024 - 320))); 
+  }
+  .button__filter,
+  .filter__active {
+    font-size: calc(12px + (20 - 12)*((100vw - 320px)/(1024 - 320))); 
+    line-height: calc(12px + (20 - 12)*((100vw - 320px)/(1024 - 320))); 
+    padding: calc(8px + (13 - 8)*((100vw - 320px)/(1024 - 320))) 
+             calc(10px + (20 - 10)*((100vw - 320px)/(1024 - 320)));
+  }
+}
+@media(max-width: 685px) {
+  .characters__cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .card-page__link .title {
+    font-size: calc(13px + (20 - 13)*((100vw - 320px)/(685 - 320)));
+    line-height: calc(15px + (22 - 15)*((100vw - 320px)/(685 - 320)));
+  }
+}

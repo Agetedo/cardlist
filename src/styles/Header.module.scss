@@ -1,0 +1,21 @@
+.header {
+  background-color: var(--green-bg-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.headerTitle {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--ovive-color);
+}
+//---@media-header------------------
+@media(max-width: 768px) {
+  .headerTitle {
+    font-size: calc(26px + (40 - 26)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(26px + (40 - 26)*((100vw - 320px)/(768 - 320)));
+  } 
+}

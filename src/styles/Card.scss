@@ -1,0 +1,119 @@
+.delete__cards {
+  position: relative;
+  padding-bottom: 8px;
+  background-color: var(--card-bg-color);
+  border-radius: 0px 0px 20px 20px;
+}
+.card {
+  padding-bottom: 33px;
+}
+.card-page__link {
+  transition: all 1s ease;
+}
+.card__image {
+  border: 2px solid var(--green-bg-color);
+  transition: all 1s ease;
+}
+.card__title {
+  max-width: 205px;
+  margin: 10px auto 0 auto;
+  padding: 0px 5px 0px 5px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: center;
+  color: var(--ovive-color);
+  text-wrap: pretty;
+  transition: all 1s ease;
+}
+.card__status {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--light-gray-color);
+}
+.delete__button,
+.like__button {
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.delete__button {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+.like__button {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.like__clicked {
+  background: var(--like-icon-bg-color);
+  position: absolute;
+  right: 17px;
+  bottom: 7px;
+  border-radius: 50%;
+  padding: 3px;
+  border: none;
+  cursor: pointer;
+  animation: blink-1 0.6s both;
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+//---@media-card-------------------------
+@media (hover: hover) and (pointer: fine) {
+  .delete__button:hover {
+    opacity: 0.5;
+  }
+  .like__button:hover {
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+  }
+}
+@media (hover: none) {
+  .delete__button:active {
+    opacity: 0.5;
+  }
+  .like__button:active {
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+  }
+}
+@media(max-width: 685px) {
+  .card__title {
+    font-size: calc(13px + (20 - 13)*((100vw - 320px)/(685 - 320)));
+    line-height: calc(15px + (22 - 15)*((100vw - 320px)/(685 - 320)));
+  }
+  .card__status {
+    font-size: calc(11px + (15 - 11)*((100vw - 320px)/(685 - 320)));
+    line-height: calc(13px + (17 - 13)*((100vw - 320px)/(685 - 320)));
+  }
+}

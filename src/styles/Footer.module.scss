@@ -1,0 +1,34 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.footerReminder .text {
+  width: 100%;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-wrap: pretty;
+  color: var(--orange-color);
+}
+.footerText {
+  margin-top: 22px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+//---@media-footer---------------
+@media(max-width: 768px) {
+  .footer {
+    padding-top: calc(20px + (32 - 20)*((100vw - 320px)/(970 - 320))); 
+    padding-bottom: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320))); 
+  }
+  .footerReminder .text {
+    max-width: 100%;
+    font-size: calc(13px + (18 - 13)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(21px + (26 - 21)*((100vw - 320px)/(768 - 320)));
+  }
+  .footerText {
+    font-size: calc(10px + (12 - 10)*((100vw - 320px)/(768 - 320))); 
+    line-height: calc(12px + (14 - 12)*((100vw - 320px)/(768 - 320))); 
+  }
+}
