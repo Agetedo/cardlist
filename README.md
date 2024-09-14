@@ -1,6 +1,6 @@
 # [Final Space](https://fs-list.netlify.app/) << deploy
 
-- React(Hooks)
+- React(hooks)
 - TypeScript
 - Vite
 - eslint
