@@ -1,3 +1,16 @@
+# [Final Space](https://fs-list.netlify.app/) << deploy
+
+- React(Hooks)
+- TypeScript
+- Vite
+- eslint
+- react-router-dom(createBrowserRouter)
+- react-error-boundary
+- autoprefixer
+- CSS-Module
+- Sass(scss)
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
