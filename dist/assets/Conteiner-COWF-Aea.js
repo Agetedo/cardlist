@@ -1,0 +1,1 @@
+import{j as n}from"./index-Bz_X-f0p.js";const i="_conteiner_1wpdi_1",o={conteiner:i};function s({children:e,className:t}){return n.jsx("div",{className:t,children:n.jsx("div",{className:o.conteiner,children:e})})}export{s as C};
