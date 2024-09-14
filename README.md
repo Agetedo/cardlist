@@ -9,6 +9,7 @@
 - autoprefixer
 - CSS-Module
 - Sass(scss)
+- public Final Space API: "https://finalspaceapi.com/api/v0/"
 
 
 # React + TypeScript + Vite
