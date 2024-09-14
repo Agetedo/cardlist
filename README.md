@@ -4,7 +4,7 @@
 - TypeScript
 - Vite
 - eslint
-- react-router-dom(createBrowserRouter)
+- react-router-dom
 - react-error-boundary
 - autoprefixer
 - CSS-Module
