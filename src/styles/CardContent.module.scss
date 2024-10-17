@@ -80,22 +80,6 @@
     border: 2px dotted var(--green-bg-color);
   }
 }
-@media(max-width: 1320px) {
-  .cardContent {
-    margin-top: calc(50px + (100 - 50)*((100vw - 320px)/(1320 - 320)));
-  }
-}
-@media(max-width: 1024px) {
-  .abilities,
-  .alias {
-    font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1024 - 320)));
-    line-height: calc(26px + (33 - 26)*((100vw - 320px)/(1024 - 320)));
-  }
-  .characterList .title {
-    font-size: calc(23px + (40 - 23)*((100vw - 320px)/(1024 - 320)));
-    line-height: calc(23px + (40 - 23)*((100vw - 320px)/(1024 - 320)));
-  }
-}
 @media(max-width: 768px) {
   .character {
     flex-direction: column;
