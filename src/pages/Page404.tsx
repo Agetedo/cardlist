@@ -7,7 +7,6 @@ interface NotFound {
   text: string;
   linkTo: string;
 }
-
 export default function Page404({ error, title, text, linkTo }: NotFound ) {
   return (
     <div id="notFound">
