@@ -4,7 +4,6 @@ interface FooterContainerProps {
   className: string;
   children: React.ReactNode;
 }
-
 export default function FooterConteiner({ children, className }: FooterContainerProps) {
   return (
     <footer className={className}>
