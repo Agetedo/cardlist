@@ -106,24 +106,6 @@
     gap: calc(20px + (50 - 20)*((100vw - 768px)/(1320 - 768)));
   }
 }
-@media(max-width: 1024px) {
-  .topEpisode {
-    margin-top: calc(25px + (50 - 25)*((100vw - 320px)/(1024 - 320)));
-  }
-  .title {
-    font-size: calc(20px + (28 - 20)*((100vw - 320px)/(1024 - 320)));
-    line-height: calc(22px + (30 - 22)*((100vw - 320px)/(1024 - 320)));
-  }
-  .text {
-    margin-top: calc(8px + (20 - 8)*((100vw - 320px)/(1024 - 320)));
-    font-size: calc(12px + (17 - 12)*((100vw - 320px)/(1024 - 320)));
-    line-height: calc(20px + (30 - 20)*((100vw - 320px)/(1024 - 320)));
-  }
-  .name {
-    font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1024 - 320)));
-    line-height: calc(14px + (20 - 14)*((100vw - 320px)/(1024 - 320)));
-  }
-}
 @media(max-width: 768px) {
   .topEpisodeList {
     gap: 20px;
