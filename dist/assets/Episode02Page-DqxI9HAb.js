@@ -1,1 +1,0 @@
-import{j as t}from"./index-Bz_X-f0p.js";import{E as o,C as r}from"./CardContent-DHjyPHZx.js";import"./Conteiner-COWF-Aea.js";function i(){return t.jsxs(t.Fragment,{children:[t.jsx(o,{topPlace:2}),t.jsx(r,{})]})}export{i as default};
