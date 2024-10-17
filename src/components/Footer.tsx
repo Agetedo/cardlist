@@ -6,9 +6,7 @@ const rightsText = " Cards List. All rights reserved.";
 export default function Footer() {
   return (
     <FooterConteiner className={styles.footer}>
-      <FooterReminder 
-        text={reminderText}
-      />
+      <FooterReminder text={reminderText} />
       <FooterRights rightsText={rightsText} />
     </FooterConteiner>  
   );
