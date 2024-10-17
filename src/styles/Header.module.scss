@@ -12,10 +12,3 @@
   text-align: center;
   color: var(--ovive-color);
 }
-//---@media-header------------------
-@media(max-width: 768px) {
-  .headerTitle {
-    font-size: calc(26px + (40 - 26)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(26px + (40 - 26)*((100vw - 320px)/(768 - 320)));
-  } 
-}
