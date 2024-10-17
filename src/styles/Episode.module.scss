@@ -33,20 +33,3 @@
   color: var(--light-gray-color);
   text-wrap: pretty;
 }
-//---@media-edisodeList------------
-@media(max-width: 1024px) {
-  .title span {
-    font-size: calc(23px + (29 - 23)*((100vw - 320px)/(1024 - 320)));
-    line-height: calc(23px + (29 - 23)*((100vw - 320px)/(1024 - 320)));
-  }
-  .text {
-    font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1024 - 320)));
-    line-height: calc(26px + (33 - 26)*((100vw - 320px)/(1024 - 320)));
-  }
-}
-@media(max-width: 768px) {
-  .title {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
