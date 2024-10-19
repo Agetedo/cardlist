@@ -1,6 +1,6 @@
 # [Final Space](https://fs-list.netlify.app/) << deploy
 
-- React(hooks): useState, useEffect, Suspense.
+- React: useState, useEffect, Suspense.
 - TypeScript
 - Vite
 - eslint
