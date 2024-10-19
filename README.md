@@ -8,7 +8,7 @@
 - react-error-boundary
 - autoprefixer
 - CSS-Module
-- Sass(scss): FlexBox, Grid, @keyframes, @media queries (Validation of files on https://css-validator.org/ is successful)
+- Sass(scss): FlexBox, Grid, @keyframes, @media queries (Validation of files css-validator is successful)
 - public Final Space API: "https://finalspaceapi.com/api/v0/"
 - This project responsive and cross-browser сompatibility
 - Deploy on app.netlify.com from GitHub repository
