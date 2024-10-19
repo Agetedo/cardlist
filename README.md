@@ -10,5 +10,5 @@
 - CSS-Module
 - Sass(scss): FlexBox, Grid, @keyframes, @media queries.
 - public Final Space API: "https://finalspaceapi.com/api/v0/"
-- This project responsive and cross-иrowser сompatibility
+- This project responsive and cross-browser сompatibility
 - Deploy on app.netlify.com from GitHub repository
